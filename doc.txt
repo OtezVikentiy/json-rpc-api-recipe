@@ -1,4 +1,4 @@
-php -r "echo bin2hex(random_bytes(20)).PHP_EOL;
+php -r "echo bin2hex(random_bytes(20)).PHP_EOL;"
 ../recipes-checker/run generate:flex-endpoint otezvikentiy/json-rpc-api-recipe flex/main flex/main .
 в readline указать хэш из 1 строки и путь до папки с версией
 
@@ -12,3 +12,5 @@ php -r "echo bin2hex(random_bytes(20)).PHP_EOL;
         }
     }
 }
+
+git add . && git commit -m 'v 1.6' && git push && git branch -D flex/main && git checkout -b flex/main && rm -rf otezvikentiy doc.txt && git add . && git commit -m 'v 1.6' && git push --force && git tag 1.6 && git push --tags
