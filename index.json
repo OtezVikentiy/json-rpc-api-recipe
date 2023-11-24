@@ -1,0 +1,14 @@
+{
+  "recipes": {
+    "otezvikentiy/json-rpc-api": [
+      "1.1.7"
+    ]
+  },
+  "branch": "master",
+  "is_contrib": true,
+  "_links": {
+    "repository": "github.com/OtezVikentiy/json-rpc-api-recipe",
+    "origin_template": "{package}:{version}@github.com/OtezVikentiy/json-rpc-api-recipe:main",
+    "recipe_template": "https://api.github.com/repos/OtezVikentiy/json-rpc-api-recipe/contents/{package_dotted}.{version}.json"
+  }
+}

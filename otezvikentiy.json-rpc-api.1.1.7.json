@@ -1,0 +1,23 @@
+{
+  "manifests": {
+    "otezvikentiy/json-rpc-api": {
+      "manifest": {
+        "bundles": {
+          "bundles": {
+            "OV\\JsonRPCAPIBundle\\OVJsonRPCAPIBundle": ["all"]
+          },
+          "copy-from-recipe": {
+            "config/": "%CONFIG_DIR%/"
+          },
+          "composer-scripts": {
+            "cache:clear": "symfony-cmd"
+          },
+          "env": {
+            "OV_JSON_RPC_API_SWAGGER_PATH": "%PUBLIC_DIR%/"
+          }
+        }
+      },
+      "ref": "6039528a4e3f8b55f9949f524b2b487262c06623"
+    }
+  }
+}
