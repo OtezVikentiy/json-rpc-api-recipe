@@ -8,7 +8,7 @@
   "is_contrib": true,
   "_links": {
     "repository": "github.com/OtezVikentiy/json-rpc-api-recipe",
-    "origin_template": "{package}:{version}@github.com/OtezVikentiy/json-rpc-api-recipe:main",
+    "origin_template": "{package}:{version}@github.com/OtezVikentiy/json-rpc-api-recipe:master",
     "recipe_template": "https://api.github.com/repos/OtezVikentiy/json-rpc-api-recipe/contents/{package_dotted}.{version}.json"
   }
 }
