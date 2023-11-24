@@ -1,14 +1,20 @@
 {
-  "recipes": {
-    "otezvikentiy/json-rpc-api": [
-      "1.1.7"
-    ]
-  },
-  "branch": "master",
-  "is_contrib": true,
-  "_links": {
-    "repository": "github.com/OtezVikentiy/json-rpc-api-recipe",
-    "origin_template": "{package}:{version}@github.com/OtezVikentiy/json-rpc-api-recipe:master",
-    "recipe_template": "https://api.github.com/repos/OtezVikentiy/json-rpc-api-recipe/contents/{package_dotted}.{version}.json"
-  }
+    "aliases": [],
+    "recipes": {
+        "otezvikentiy/json-rpc-api": [
+            "1.1.7"
+        ]
+    },
+    "recipe-conflicts": [],
+    "versions": [],
+    "branch": "master",
+    "is_contrib": false,
+    "_links": {
+        "repository": "github.com/otezvikentiy/json-rpc-api-recipe",
+        "origin_template": "{package}:{version}@github.com/otezvikentiy/json-rpc-api-recipe:master",
+        "recipe_template": "https://raw.githubusercontent.com/otezvikentiy/json-rpc-api-recipe/master/{package_dotted}.{version}.json",
+        "recipe_template_relative": "{package_dotted}.{version}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/otezvikentiy/json-rpc-api-recipe/master/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
+    }
 }
