@@ -1,7 +1,0 @@
-services:
-    App\RPC\V1\:
-        resource: '../../src/RPC/V1/{*Method.php}'
-        autowire: true
-        autoconfigure: true
-        tags:
-            - { name: ov.rpc.method, namespace: App\RPC\V1\, version: 1 }

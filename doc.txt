@@ -1,0 +1,14 @@
+php -r "echo bin2hex(random_bytes(20)).PHP_EOL;
+../recipes-checker/run generate:flex-endpoint otezvikentiy/json-rpc-api-recipe flex/main flex/main .
+в readline указать хэш из 1 строки и путь до папки с версией
+
+}
+    "extra": {
+        "symfony": {
+            "endpoint": [
+                "https://api.github.com/repos/otezvikentiy/json-rpc-api-recipe/contents/index.json?ref=flex/main",
+                "flex://defaults"
+            ]
+        }
+    }
+}

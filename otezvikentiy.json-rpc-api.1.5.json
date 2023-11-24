@@ -21,12 +21,12 @@
                 "config/packages/ov_json_rpc_api.yaml": {
                     "contents": [
                         "services:",
-                        "    App\\RPC\\V1\\:",
-                        "        resource: '../../src/RPC/V1/{*Method.php}'",
-                        "        autowire: true",
-                        "        autoconfigure: true",
-                        "        tags:",
-                        "            - { name: ov.rpc.method, namespace: App\\RPC\\V1\\, version: 1 }",
+                        "#    App\\RPC\\V1\\:",
+                        "#        resource: '../../src/RPC/V1/{*Method.php}'",
+                        "#        autowire: true",
+                        "#        autoconfigure: true",
+                        "#        tags:",
+                        "#            - { name: ov.rpc.method, namespace: App\\RPC\\V1\\, version: 1 }",
                         ""
                     ],
                     "executable": false
@@ -40,7 +40,7 @@
                     "executable": false
                 }
             },
-            "ref": "4a7d73d23189833abd53b04915f70e9586fb76bd"
+            "ref": "84e4d14d93be2af849dfa8af06d8f676f0a3bb39"
         }
     }
 }
