@@ -18,24 +18,6 @@
                 }
             },
             "files": {
-                "config/packages/ov_json_rpc_api.yaml": {
-                    "contents": [
-                        "ov_json_rpc_api:",
-                        "    swagger:",
-                        "        api_v1:",
-                        "            swagger_version: '1.2'",
-                        "            api_version: '1'",
-                        "            info:",
-                        "                title: 'title'",
-                        "                description: 'description'",
-                        "                terms_of_service_url: 'terms_of_service_url'",
-                        "                contact: 'contact'",
-                        "                license: 'license'",
-                        "                licenseUrl: 'licenseUrl'",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/routes/ov_json_rpc_api.yaml": {
                     "contents": [
                         "ov_json_rpc_api:",
@@ -43,9 +25,22 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/services.yaml": {
+                    "contents": [
+                        "services:",
+                        "    App\\RPC\\V1\\:",
+                        "        resource: '../../src/RPC/V1/{*Method.php}'",
+                        "        autowire: true",
+                        "        autoconfigure: true",
+                        "        tags:",
+                        "            - { name: ov.rpc.method, namespace: App\\RPC\\V1\\, version: 1 }",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "dd0a8afddf59bab03d73a4fc27d7e6d80372ee09"
+            "ref": "27dc06eb804821945cd38dd7005d92a000877817"
         }
     }
 }
