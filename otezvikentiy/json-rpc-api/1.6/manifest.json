@@ -16,7 +16,7 @@
     "add-lines": [
         {
             "file": "config/services.yaml",
-            "content": "    App\\RPC\\V1\\:\\n        resource: '../src/RPC/V1/{*Method.php}'\\n        autowire: true\\n        autoconfigure: true\\n        tags:\\n            - { name: ov.rpc.method, namespace: App\\RPC\\V1\\, version: 1 }",
+            "content": "    App\\RPC\\V1\\:\n        resource: '../src/RPC/V1/{*Method.php}'\n        autowire: true\n        autoconfigure: true\n        tags:\n            - { name: ov.rpc.method, namespace: App\\RPC\\V1\\, version: 1 }",
             "position": "bottom"
         }
     ]
