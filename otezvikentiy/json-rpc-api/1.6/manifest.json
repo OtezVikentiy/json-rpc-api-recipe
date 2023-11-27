@@ -1,14 +1,23 @@
 {
-  "bundles": {
-    "OV\\JsonRPCAPIBundle\\OVJsonRPCAPIBundle": ["all"]
-  },
-  "copy-from-recipe": {
-    "config/": "%CONFIG_DIR%/"
-  },
-  "composer-scripts": {
-    "cache:clear": "symfony-cmd"
-  },
-  "env": {
-    "OV_JSON_RPC_API_SWAGGER_PATH": "%PUBLIC_DIR%/"
-  }
+    "bundles": {
+        "OV\\JsonRPCAPIBundle\\OVJsonRPCAPIBundle": [
+            "all"
+        ]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    },
+    "composer-scripts": {
+        "cache:clear": "symfony-cmd"
+    },
+    "env": {
+        "OV_JSON_RPC_API_SWAGGER_PATH": "%PUBLIC_DIR%/"
+    },
+    "add-lines": [
+        {
+            "file": "config/services.yaml",
+            "content": "    App\\RPC\\V1\\:\\n        resource: '../src/RPC/V1/{*Method.php}'\\n        autowire: true\\n        autoconfigure: true\\n        tags:\\n            - { name: ov.rpc.method, namespace: App\\RPC\\V1\\, version: 1 }",
+            "position": "bottom"
+        }
+    ]
 }
