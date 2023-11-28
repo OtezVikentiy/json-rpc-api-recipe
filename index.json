@@ -2,7 +2,7 @@
     "aliases": [],
     "recipes": {
         "otezvikentiy/json-rpc-api": [
-            "1.6"
+            "1.7"
         ]
     },
     "recipe-conflicts": [],
