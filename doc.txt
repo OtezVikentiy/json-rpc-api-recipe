@@ -14,4 +14,5 @@ php -r "echo bin2hex(random_bytes(20)).PHP_EOL;"
 }
 
 git add . && git commit -m 'v 1.7' && git push && git branch -D flex/main && git checkout -b flex/main && rm -rf otezvikentiy doc.txt && git add . && git commit -m 'v 1.7' && git push --set-upstream origin flex/main --force && git tag 1.7 && git push --tags && git checkout main
+
 git add . && git commit -m 'v 1.7' && git push && git branch -D flex/main && git checkout -b flex/main && rm -rf otezvikentiy doc.txt && git add . && git commit -m 'v 1.7' && git push --set-upstream origin flex/main --force && git tag -d 1.7 && git push origin --delete 1.7 && git tag 1.7 && git push --tags && git checkout main
