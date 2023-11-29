@@ -12,6 +12,7 @@
     },
     "env": {
         "OV_JSON_RPC_API_SWAGGER_PATH": "%PUBLIC_DIR%/openapi/",
-        "OV_JSON_RPC_API_BASE_URL": "http://localhost"
+        "OV_JSON_RPC_API_BASE_URL": "http://localhost",
+        "OV_JSON_RPC_API_AUTH_TOKEN": ""
     }
 }

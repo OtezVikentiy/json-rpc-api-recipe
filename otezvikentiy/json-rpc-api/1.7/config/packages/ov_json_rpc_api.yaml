@@ -3,6 +3,8 @@ ov_json_rpc_api:
         api_v1:
             api_version: '1'
             base_path: '%env(string:OV_JSON_RPC_API_BASE_URL)%'
+            auth_token_name: 'X-AUTH-TOKEN'
+            auth_token_test_value: '%env(string:OV_JSON_RPC_API_AUTH_TOKEN)%' #set blank for prod environment
             info:
                 title: 'title'
                 description: 'description'
